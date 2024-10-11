@@ -1,17 +1,38 @@
-# test_chat
+# Flutter AI Chat with Image Analysis
 
-A new Flutter project.
+A Flutter app that combines AI chat functionality with screen image analysis using the Anthropic API.
 
-## Getting Started
+## Demo
+![Demo](demo.gif)
 
-This project is a starting point for a Flutter application.
+## Supported Features
 
-A few resources to get you started if this is your first Flutter project:
+- [x] AI-powered chat interface
+- [x] Screen screenshot capability
+- [x] AI analysis of screenshot content
+- [x] Integration with Anthropic API for request processing
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## App Architecture
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# anthropic-chat-demo
+The app is composed of three main layers:
+
+### Data Layer
+This layer contains the `AnthropicService` that interacts with the Anthropic API to process chat messages and analyze images.
+
+### Application Layer
+This layer manages the state and business logic of the app, including:
+- Chat message handling
+- Screenshot capture and processing
+- Integration between UI interactions and the data layer
+
+### Presentation Layer
+This layer contains all the widgets that make up the user interface, including the chat screen and screenshot functionality.
+
+## Packages in Use
+
+- `dash_chat_2` for the chat UI
+- `anthropic_sdk_dart` for Anthropic API integration
+- `screenshot` for capturing screen images
+- `flutter_riverpod` for state management
+
+
